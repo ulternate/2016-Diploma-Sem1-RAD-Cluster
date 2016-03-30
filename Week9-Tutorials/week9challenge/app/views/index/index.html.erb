@@ -1,0 +1,16 @@
+<!-- Create a Page that displays your details (Student name, ID,etc)
+
+You must use the following in your page: CSS, Javascript (basics only!!)
+
+Your page MUST include an image, various heading sizes (basic HTML elements!)
+
+Email me a screenshot, tell me which part was the MOST difficult: nichola.kerr@central.wa.edu.au -->
+
+<body style="background-color: #<%= @colour %> !important; color: #<%= @inverse_colour %>;">
+	<%= image_tag("hero_image.png", :alt => "Daniel Swain") %>
+	<h1>Daniel Swain</h1>
+	<h2>041601498</h2>
+	<p>This is my week 9 challenge. The colour of this page is based upon the time of day, which changes via javascript.</p>
+	<p>The current time is</p>
+	<h2><span id="hour"><%= @hour %></span>:<span id="min"><%= @min %></span>:<span id="sec"><%= @sec %></span></h2> 
+</body>
