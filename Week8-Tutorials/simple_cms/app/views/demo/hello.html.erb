@@ -1,0 +1,15 @@
+<h1>Demo#hello</h1>
+<p>Hello World!</p>
+<%= 1+1 %>
+<br/>
+
+<%# Variable assignment in ERB  %>
+<% target = "world" %>
+<%# Render the variable  %>
+<%= "Hello #{target}" %>
+
+<% @array.each do |n| %>
+	<%= n %> <br/>
+<% end %>
+
+<%= link_to "Hello Page 1", {action:'index'}  %>
